@@ -1,5 +1,5 @@
 <template>
-  <!-- <Navbar /> -->
+  <Navbar />
   <!-- <sidebar /> -->
   <div><router-view /></div>
 </template>
@@ -17,24 +17,11 @@ export default defineComponent({
 });
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700;800;900&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Prompt, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
