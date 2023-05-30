@@ -36,6 +36,9 @@
 
           <div class="row justify-content-center" v-if="isEdit">
             <div class="input-data-main">
+              <div class="header-add-edit">
+              <h2>แก้ไขข้อมมูล</h2>
+            </div>
             <div class="input-data-content">
               <input type="text" v-model="profileData.name" />
             </div>
@@ -51,11 +54,14 @@
             <div class="input-data-content">
               <input type="password" v-model="profileData.password" />
             </div>
-            <div><button @click="addData">Add User</button></div>
+            <div><button class="button-add-comtent" @click="addData">Update</button></div>
           </div>
         </div>
           <div class="row justify-content-center" v-else>
             <div class="input-data-main">
+              <div class="header-add-edit">
+              <h2>เพิ่มข้อมูล</h2>
+            </div>
             <div class="input-data-content">
               <input type="text" placeholder="name" v-model="profileData.name"/>
             </div>
@@ -80,7 +86,7 @@
   </div>
 </template>
 
-<script>
+<script lang="">
 import Profile from "../assets/infomation.json";
 export default {
   data() {
@@ -107,7 +113,7 @@ export default {
     },
     editProfile(index, x) {
       this.isEdit = true;
-      this.profileData = { ...x };
+      this.profileData = x ;
       this.profileIndex = index;
     },
     deleteProfile(n) {

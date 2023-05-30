@@ -1,12 +1,18 @@
 <template>
-  <Navbar />
-  <!-- <sidebar /> -->
+  <div class="header-main">
+    <div class="row">
+    <div class="col-md-1 m-auto"><sidebar /></div>
+    <div class="col-md-11"><Navbar /></div>
+  </div>
+  </div>
+  
+
   <div><router-view /></div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Navbar from "@/components/Navbar.vue"; 
+import Navbar from "@/components/Navbar.vue";
 import Sidebar from "@/components/sidebar.vue";
 
 export default defineComponent({
@@ -17,11 +23,12 @@ export default defineComponent({
 });
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700;800;900&display=swap");
 #app {
   font-family: Prompt, Helvetica, Arial, sans-serif;
   text-align: center;
 }
-
-
+.header-main {
+  background-color: #18191a;
+}
 </style>
