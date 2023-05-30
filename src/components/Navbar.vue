@@ -21,9 +21,9 @@
       
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link " aria-current="page" href="#">Home</a>
-          </li>
+          </li> -->
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li> -->
@@ -49,15 +49,7 @@
           </li> -->
           
         </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
       </div>
     </div>
     
@@ -72,6 +64,9 @@ export default {};
 <style lang="scss" scoped>
 nav{
   background-color: #18191a;
+  .container-fluid{
+    justify-content: end !important;
+  }
   .navbar-brand{
     color: aliceblue;
   }

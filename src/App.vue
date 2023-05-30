@@ -1,11 +1,10 @@
 <template>
   <div class="header-main">
-    <div class="row">
-    <div class="col-md-1 m-auto"><sidebar /></div>
-    <div class="col-md-11"><Navbar /></div>
+    <div class="row mx-0">
+      <div class="col-md-1 col-6 m-auto"><sidebar /></div>
+      <div class="col-md-11 col-6"><Navbar /></div>
+    </div>
   </div>
-  </div>
-  
 
   <div><router-view /></div>
 </template>
