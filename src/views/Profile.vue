@@ -18,7 +18,7 @@
                   <div>birthdate : {{ x.birthdate }}</div>
                   <div>address : {{ x.address }}</div>
                   <div>user : {{ x.user }}</div>
-                  <div>password : {{ x.password }}</div>
+                  <!-- <div>password : {{ x.password }}</div> -->
                 </div>
               </div>
               <div class="col-3 m-auto">
