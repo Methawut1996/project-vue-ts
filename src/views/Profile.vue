@@ -199,7 +199,7 @@ export default defineComponent({
   name: "profile",
   setup() {
     var profile: Ref<profileModal[]> = ref(Profile);
-    var profileClone: Ref<profileModal[]> = ref(Profile);
+    var profileClone: Ref<profileModal[]> = ref([...Profile]);
 
     var profileIndex: Ref<number | null> = ref(null);
     var isEdit = ref(false);
@@ -215,10 +215,13 @@ export default defineComponent({
 
     function addData() {
       if (profileIndex.value != null) {
-        profileIndex.value = null;
+        // profileIndex.value = null;
         profileClone.value[profileIndex?.value || 0] = profileData.value;
+        console.log()
         return (profile.value[profileIndex?.value || 0] = profileData.value);
+        
       }
+      
       profile.value.push(profileData.value);
       profileClone.value.push(profileData.value);
       isEdit.value = false;
