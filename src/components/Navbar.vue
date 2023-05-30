@@ -78,5 +78,8 @@ nav{
       }
     }
   }
+  .navbar-toggler {
+    display: none;
+  }
 }
 </style>

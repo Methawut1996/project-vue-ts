@@ -1,8 +1,8 @@
 <template>
   <div class="header-main">
     <div class="row mx-0">
-      <div class="col-md-1 col-6 m-auto"><sidebar /></div>
-      <div class="col-md-11 col-6"><Navbar /></div>
+      <div class=" col-6 m-auto header-style-left"><sidebar /></div>
+      <div class=" col-6 header-style-right"><Navbar /></div>
     </div>
   </div>
 
@@ -30,4 +30,12 @@ export default defineComponent({
 .header-main {
   background-color: #18191a;
 }
+.header-style-left{
+display:flex;
+}
+.header-style-right{
+  display:flex;
+  justify-content: end;
+}
+
 </style>

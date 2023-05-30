@@ -3,7 +3,7 @@
     <div class="container">
       <div class="style-border">
         <h1>ข้อมูลผู้ใช้งาน</h1>
-        <div class="d-flex" role="search">
+        <div class="menu-search" role="search">
           <input
             class="form-control me-2"
             type="search"
@@ -269,9 +269,7 @@ export default defineComponent({
   .sidebar-main {
     text-align: start;
   }
-  .navbar-toggler {
-    display: none;
-  }
+  
   .data-profile {
     font-size: 13px;
   }
@@ -279,6 +277,12 @@ export default defineComponent({
     margin: 10px 0;
   }
   .input-data-main {
+    width: 100% !important;
+  }
+  .style-border{
+    padding: 0.5rem !important;
+  }
+  .menu-search {
     width: 100% !important;
   }
   
@@ -324,6 +328,7 @@ export default defineComponent({
       }
     }
   }
+  
   .button-add-comtent {
     width: 100px;
     border-radius: 15px;
@@ -332,7 +337,7 @@ export default defineComponent({
   }
   .input-data-main {
     background-color: #18191a;
-    width: 35%;
+    width: 350px;
     padding: 1.5rem;
     border-radius: 15px;
     margin: 1rem 0;
@@ -343,6 +348,12 @@ export default defineComponent({
       width: 228px;
     }
   }
+  .menu-search {
+    display: flex;
+    width: 50%;
+    margin: auto;
+  }
+  
   
 }
 </style>
